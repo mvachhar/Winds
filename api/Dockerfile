@@ -23,4 +23,4 @@ COPY . .
 EXPOSE 8080
 
 # Run process via pm2
-CMD ["pm2-runtime", "start", "process_prod.json"]
+CMD ["pm2-runtime", "start", "process_dev.json"]

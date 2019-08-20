@@ -22,20 +22,19 @@ services:
         max-size: 100MB
         max-file: '3'
     environment:
-      NODE_ENV: production
       DOCKER: 'true'
-      PRODUCT_URL: 'https://getstream.io/winds'
+      PRODUCT_URL: http://localhost:3000
       PRODUCT_NAME: Winds
       PRODUCT_AUTHOR: Stream
       DATABASE_URI: 'mongodb://database/WINDS'
       CACHE_URI: 'redis://cache:6379'
-      JWT_SECRET: INSERT_JWT_SECRET_HERE
+      JWT_SECRET: $JWT_SECRET
       API_PORT: 8080
       STREAM_API_BASE_URL: 'https://windspersonalization.getstream.io/personalization/v1.0'
-      STREAM_APP_ID: INSERT_STREAM_API_ID_HERE
-      STREAM_API_KEY: INSERT_STREAM_API_KEY_HERE
-      STREAM_API_SECRET: INSERT_STREAM_API_SECRET_HERE
-      ALGOLIA_WRITE_KEY: INSERT_ALGOLIA_WRITE_KEY_HERE
+      STREAM_APP_ID: $STREAM_APP_ID
+      STREAM_API_KEY: $STREAM_API_KEY
+      STREAM_API_SECRET: $STREAM_API_SECRET
+      ALGOLIA_WRITE_KEY: $ALOGOLIA_WRITE_KEY
   cache:
     image: 'redis:alpine'
     ports:
