@@ -1,0 +1,23 @@
+{
+  "name": "reactapp",
+  "version": "1.0.0",
+  "description": "Adapt project to deploy a node app with Postgres",
+  "main": "dist/index.js",
+  "scripts": {},
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@adpt/cloud": "latest",
+    "@adpt/core": "latest",
+    "@adpt/utils": "latest",
+    "@types/dotenv": "^6.1.1",
+    "@types/fs-extra": "^5.0.4",
+    "@types/lodash": "^4.14.112",
+    "@types/node": "^8.10.20",
+    "dotenv": "^8.1.0",
+    "fs-extra": "^7.0.1",
+    "lodash": "^4.17.11",
+    "source-map-support": "^0.5.5",
+    "typescript": "^3.0.3"
+  }
+}
