@@ -19,6 +19,9 @@ COPY package.json ./
 # Copy app source code
 COPY . .
 
+# Install node_modules
+RUN yarn install
+
 # Expose port 8080
 EXPOSE 8080
 
